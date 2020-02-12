@@ -13,8 +13,11 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('Successfully connected to game servers')
     conn.write('Name: WF')
+    // Hardcoded:
+    // setInterval(() => {
+    //   conn.write('Move: up')
+    // }, 500)
   })
-
  
 
   // interpret incoming data as text
